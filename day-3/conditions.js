@@ -19,18 +19,18 @@ if (time > 10 ) {
 }
 
 // const age = 19
+let age = 55;
 
-// if (age < 18) {
-//     console.log("You are a minor");
-// } else if (age === 18) {
-//     console.log("You just became an adult");
-// }else {
-//     console.log("You are an adult");
-// }
+if (age <= 54) {
+    console.log("You are a minor");
+} else if (age !== 60) {
+    console.log("You just became an adult");
+}else {
+    console.log("You are an adult");
+}
 
 
 // switch statement
-let age = 18;
 
 switch (age) {
   case  18:
@@ -85,3 +85,50 @@ switch (day) {
 
 
 console.log((5 !== 4) ? "Good morning" : "Good evening"); 
+
+
+
+//comparisons oparetor      
+
+console.log(5 != 9);
+
+
+
+// 🔹 Equality and Inequality
+1 == 1 // true
+1 == '1' // true
+1 === '1' // false
+0 == false // true
+0 === false // false
+
+
+'hello' == 'Hello' //false
+null == undefined ////true
+
+null === undefined ////false
+
+true == 1 // true
+
+true === 1 // false
+false == 0 // true
+false === 0 // false
+
+
+'5' != 5 // false
+'5' !== 5 // true
+
+
+
+//NaN
+
+// 🔹 Greater Than / Less Than
+5 > 3 //true
+5 < 3 // false
+10 >= 10 //true
+7 <= 8 // true
+'apple' > 'banana' //false
+'abc' < 'bcd'
+
+'A' < 'a'
+
+console.log('ac' < 'ab');
