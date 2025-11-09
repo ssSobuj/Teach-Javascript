@@ -70,3 +70,5 @@ const result = numbers.find((num) => {
 });
 
 console.log(result); // Output: 40
+
+// jjhj
