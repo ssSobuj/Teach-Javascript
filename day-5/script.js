@@ -55,6 +55,8 @@
 
 // Search Methods
 let fruits = ["Banana", "Orange", "Apple", "Mango"];
+let fruits1 = ["Banana", "Orange", "Apple", "Mango"];
+console.log(fruits.concat(fruits1));
 
 console.log(fruits.indexOf("Apple"));
 console.log(fruits.indexOf("Pineapple")); // -1
