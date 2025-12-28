@@ -74,3 +74,60 @@ const result = numbers.find((num) => {
 console.log(result); // Output: 40
 
 // jjhj
+
+const test = [3, "jjj", 5, 6, 7, 8, 9];
+test.pop();
+test.pop();
+test.push("new item");
+test.shift();
+test.unshift("new start");
+console.log(test);
+
+const array1 = [1, 2, 3];
+const array2 = [4, 5, 6];
+
+const combinedArray = array2.concat(array1);
+console.log(combinedArray); // Output: [1, 2, 3, 4, 5, 6]
+
+// array.find()
+//array.find() method returns the value of the first element in the array that satisfies the provided testing function. Otherwise, it returns undefined.
+const sampleNumbers = [5, 11, 12, 8, 130, 44];
+
+function findGreaterThanTen(element) {
+  return element < 10;
+}
+
+const found = sampleNumbers.find(findGreaterThanTen);
+
+// array.find with for loop
+
+//array.sort()
+const unsortedArray = [40, 100, 1, 5, 25, 10];
+
+unsortedArray.sort(compareNumbers);
+//1,5,25,10
+function compareNumbers(a, b) {
+  return b - a;
+}
+
+console.log(unsortedArray);
+
+// what is callBack function?
+// A callback function is a function passed into another function as an argument, which is then invoked inside the outer function to complete some kind of routine or action.
+// Example of callback function
+
+//in bangla
+
+function greeting(name) {
+  alert("Hello " + name);
+}
+
+function processUserInput(func) {
+  var name = prompt("Please enter your name.");
+  func(name);
+}
+
+processUserInput(greeting);
+
+// Example of callback function in array method
+const nums = [1, 2, 3, 4, 5];

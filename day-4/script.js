@@ -112,3 +112,8 @@ demoElement.innerHTML += `<p>Next year, I will be ${
 demoElement.innerHTML += `<p>In five years, I will be ${
   personAge + 5
 } years old.</p>`;
+
+// todays task
+// read all type of function
+// practice template literals
+// practice loops in javascript
