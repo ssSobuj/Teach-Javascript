@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <div class="grade-item">
+      <h3>Grade Checker</h3>
+
+      <div>
+        <label for="marks" class="form-label">Enter marks</label>
+        <input
+          id="marks"
+          type="number"
+          min="0"
+          max="100"
+          class="form-control"
+          placeholder="e.g. 33"
+        />
+      </div>
+
+      <div class="d-flex gap-2 mb-3">
+        <button id="checkBtn" class="btn btn-primary flex-grow-1">
+          Check Grade
+        </button>
+        <button id="clearBtn" class="btn btn-outline-secondary">Clear</button>
+      </div>
+
+      <div
+        id="output"
+        class="p-3 rounded-3"
+        style="
+          background: rgba(255, 255, 255, 0.03);
+          min-height: 56px;
+          display: flex;
+          align-items: center;
+        "
+      >
+        <div id="message" class="result">--</div>
+      </div>
+
+      <small
+        >Note: ranges are editable in the JS if you want different
+        cutoffs.</small
+      >
+    </div>
+
+    <script src="/assets/custom.js"></script>
+  </body>
+</html>
