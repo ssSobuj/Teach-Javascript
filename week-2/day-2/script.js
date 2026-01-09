@@ -8,12 +8,14 @@ const input = document.getElementById("inputField");
 btn.addEventListener("click", function (event) {
   // Generate random color
   const randomColor = Math.floor(Math.random() * 16777215).toString(16);
+
   box.style.backgroundColor = "#" + randomColor;
   box.innerText = "Clicked! #" + randomColor;
+  console.log("Random Color Generated:", randomColor);
 
   // Using Event Object
-  console.log("Event Type:", event.type);
-  console.log("Button clicked at X:", event.clientX, "Y:", event.clientY);
+  // console.log("Event Type:", event.type);
+  // console.log("Button clicked at X:", event.clientX, "Y:", event.clientY);
 });
 
 // 2. Mouse Over Event
@@ -64,3 +66,5 @@ input2.addEventListener("keyup", function (event) {
   box2.style.backgroundColor = colorValue;
   box2.innerText = "Typing: " + colorValue;
 });
+
+// what is math.random()?// Math.random() is a built-in JavaScript function that generates a pseudo-random floating-point number between 0 (inclusive) and 1 (exclusive). This means it can return any value from 0 up to, but not including, 1. It is commonly used for generating random values in various applications, such as games, simulations, or random selections.

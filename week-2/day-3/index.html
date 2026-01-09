@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms & Validation</title>
+  </head>
+  <body>
+    <h1>Forms & Validation Example</h1>
+    <form id="myForm">
+      <!-- inputs -->
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" />
+      <br /><br />
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" />
+      <br /><br />
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" />
+      <br /><br />
+      <label for="avatar">Avatar:</label>
+      <input type="file" id="avatar" name="avatar" />
+
+      <!-- select -->
+      <br /><br />
+      <label for="role">Role:</label>
+      <select id="role" name="role">
+        <option value="user">User</option>
+        <option value="admin">Admin</option>
+        <option value="guest">Guest</option>
+      </select>
+      <!-- textarea -->
+      <br /><br />
+      <label for="bio">Bio:</label>
+      <textarea id="bio" name="bio" rows="8" cols="50"></textarea>
+
+      <!--  -->
+      <br /><br />
+      <button id="submitButton" type="submit">Submit</button>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
