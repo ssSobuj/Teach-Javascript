@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <form id="registerForm" novalidate>
+      <h2>Register</h2>
+      <!-- Full Name -->
+      <label>Full Name</label>
+      <input
+        type="text"
+        id="fullName"
+        minlength="3"
+        pattern="^[A-Za-z\s]+$"
+        placeholder="Your full name"
+      />
+      <small class="error"></small>
+
+      <br />
+
+      <!-- Email -->
+      <label>Email Address</label>
+      <input type="email" id="email" required placeholder="user@example.com" />
+      <small class="error"></small>
+
+      <br />
+
+      <!-- Password -->
+      <label>Password</label>
+      <input
+        type="password"
+        id="password"
+        required
+        minlength="8"
+        pattern="(?=.*[A-Z])(?=.*\d).+"
+        placeholder="8 chars, 1 uppercase, 1 number"
+      />
+      <small class="error"></small>
+
+      <br />
+
+      <!-- Confirm Password -->
+      <label>Confirm Password</label>
+      <input
+        type="password"
+        id="confirmPassword"
+        required
+        placeholder="Re-enter password"
+      />
+      <small class="error"></small>
+
+      <br />
+
+      <!-- Age -->
+      <label>Age</label>
+      <input type="number" id="age" required min="18" />
+      <small class="error"></small>
+
+      <br />
+
+      <!-- Select Option -->
+      <label for="selectOption">Select Option</label>
+      <select id="selectOption" required>
+        <option value="">Please select</option>
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+        <option value="option3">Option 3</option>
+      </select>
+      <small class="error"></small>
+
+      <br />
+
+      <!-- Gender -->
+      <label>Gender</label>
+      <div id="gender" class="radio-group">
+        <label
+          ><input type="radio" name="gender" value="male" required />
+          Male</label
+        >
+        <label
+          ><input type="radio" name="gender" value="female" /> Female</label
+        >
+        <label><input type="radio" name="gender" value="other" /> Other</label>
+      </div>
+      <small class="error"></small>
+
+      <br />
+
+      <!-- Terms -->
+      <label class="checkbox">
+        <input type="checkbox" id="terms" required />
+        I agree to the Terms & Conditions
+      </label>
+      <small class="error"></small>
+
+      <br />
+
+      <button type="submit">Register</button>
+
+      <p class="success" id="successMsg"></p>
+    </form>
+  </body>
+  <script src="assets/custom.js"></script>
+</html>
