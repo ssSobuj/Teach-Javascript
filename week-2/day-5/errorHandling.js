@@ -3,6 +3,8 @@
 // try block contains code that may throw an error
 // catch block contains code to handle the error
 
+const a = 10;
+const b = 20;
 const testErrorButton = document.getElementById("testError");
 
 testErrorButton.addEventListener("click", () => {
@@ -11,14 +13,12 @@ testErrorButton.addEventListener("click", () => {
     console.log("Operation successful:", result);
   } catch (error) {
     //Handle the error
-    console.error("An error occurred:", error);
+    console.error("An error occurred:", error.message);
   } finally {
     console.log("Execution completed.");
   }
 });
 
 function riskyOperation() {
-  // Simulating an error
-  throw new Error("Something went wrong in riskyOperation!");
-  //   return "All good!";
+  return a + b;
 }
